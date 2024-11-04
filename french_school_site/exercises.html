@@ -3,3 +3,114 @@
  Названия переменных (атрибут - name) должны соответствовать решаемой задаче. 
  Форма должна обязательно содержить следующие типы: text, number, radio, checkbox, date, password,
   hiddden и возможность отправлять на удаленный сервер значения по-умолчанию; -->
+<!-- Навигацию (раздел 1, раздел 2, к началу ) внутри страницы с использование закладок;
+Фрагменты, содержащие списки нумерованные, не нумерованные, вложенные
+Изображения объектов или субъектов с соответствующими пояснениями и комментариями;
+Изображение большого размера (600 пикселей по горизонтали и 400 по вертикали), открывающиеся в новом окне или закладке в центре с использованием миниатюрной графической гиперссылки (размер по горизонтали до 100 пикселей) (можно вставить в ячейке таблицы); -->
+<!-- Таблицу, содержащую: изображение на заднем фоне всей таблицы, изображение в одной из ячеек, изображение, гиперссылки -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задания - École Sur Web</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <table cellspacing="10" cellpadding="10"  width="100%" background="background.jpg">
+        <tr>
+            <td width="100px">
+                <a href="../french_school_site/index.html" target="_self"><img src="logo.png" height="100px"></a>
+            </td>
+            <td align="right" width="50%">
+
+            </td>
+            <td align="right" bgcolor="white" >
+                <table>
+                    <td width="150px" align="center">
+                        <a href="../french_school_site/index.html" target="_self">Главная</a>
+                    </td>
+                    <td width="150px" align="center">
+                        <a href="../french_school_site/tutors.html" target="_self">Преподаватели</a>
+                    </td>
+                    <td width="150px" align="center">
+                        <a href="../french_school_site/courses.html" target="_self">Курсы</a>
+                    </td>
+                    <td width="150px" align="center">
+                        <a href="../french_school_site/exercises.html" target="_self"><b>Задания</b></a>
+                    </td>
+                </table>
+            </td>
+            
+        </tr>
+        <tr>
+            <td colspan="5" bgcolor="white" align="center">
+                Практические задания<br>
+                <a href="#a1_a2">Аудирование</a><br>
+                <a href="#b1_b2">Для продолжающих: B1-B2</a>
+            </td>
+        </tr>
+
+        <tr>
+            <p>Блок заданий A <input type="hidden" name="block_a" value="search"></p>
+            <td colspan="5" bgcolor="white">
+            <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+                <h3 align="center">Задание 1 </h3>
+                <p>Установите соответствие между высказываниями каждого говорящего и утверждениями в списке. 
+                    В задании есть одно лишнее утверждение.
+                </p>
+                <audio src="practice_audio_1.mp3" controls></audio>
+                <ol>
+                    <li>L'utilisation d'internet est un moyen efficace d'apprendre l'anglais.</li>
+                    <li>Il existe de nombreux forums intéressants sur internet.</li>
+                    <li>Internet facilite les achats.</li>
+                    <li>Internet est très utile pour le travail de traducteur.</li>
+                    <li>Internet permet de découvrir d'autres cultures.</li>
+                    <li>Internet peut etre dangereux pour les utilisateurs.</li>
+                    <li>Internet donne un accès rapide à l'information dont on a besoin.</li>
+                </ol>
+                <p>Ответ: <input type="number" name="answer_1" size=20 placeholder="ABCDEFG"></p>
+
+                <h3 align="center">Задание 2 </h3>
+                <p>Преобразуйте, если это необходимо, слово MÉLANGER так, чтобы оно грамматически соответствовало содержанию текста.</p>
+                <p>La langue française d’aujourd’hui est le résultat d’une longue évolution. D’abord, il y a eu le gallo-⁠romain, 
+                    une langue qui __________________ la langue gauloise du peuple celte et le latin des Romains, aux premiers siècles.</p>
+                <p>Ответ: <input type="text" name="answer_2" size=20></p>
+
+                <h3 align="center">Задание 3 </h3>
+                <p>Какое слово пропущено в тексте?</p>
+                <p>Elle était toujours habillée de noir et ses cheveux blancs tressés étaient coiffés en chignon. 
+                    Elle avait d'ailleurs un nom italien, elle s'appelait Ida, et Mondo aimait bien entrer dans son magasin. 
+                    Quelquefois il travaillait pour elle, il allait ______ du pain aux commerçants du voisinage. 
+                    Quand il revenait, elle coupait une grosse tranche dans un pain rond et elle la lui tendait, 
+                    enveloppée dans du papier transparent. </p>
+                <p>Ответ:
+                    <input type="Radio" name="answer_3" value="1">remporter
+                    <input type="Radio" name="answer_3" value="2">emporter
+                    <input type="Radio" name="answer_3" value="3">porter
+                    <input type="Radio" name="answer_3" value="4">rapporter
+                </p>
+
+                <h3 align="center">Задание 4 </h3>
+                <p>Выберите верные утверждения.</p>
+                <audio src="practice_audio_2.mp3" controls></audio>
+                <p>Ответ:
+                    <input type="Checkbox" name="answer_4"  value="1">Joëlle est fatiguée. <br>
+                    <input type="Checkbox" name="answer_4"  value="2">Joëlle fait son cours dans 3 classes de première.<br>
+                    <input type="Checkbox"  name="answer_4"   value="3"ed>Joëlle n’arrive pas à motiver ses élèves.<br>
+                    <input type="Checkbox" name="answer_4" value="4">Joëlle est une prof débutante.<br>
+                    <input type="Checkbox" name="answer_4"  value="5">L’idée d’utiliser un portable à la leçon appartient à Patrick.<br>
+                    <input type="Checkbox"  name="answer_4"   value="6">Les élèves ont toujours une caméra avec eux.<br>
+                    <input type="Checkbox" name="answer_4" value="7">Joëlle va essayer le «Pocket Film».
+                </p>
+                <p>
+                <input type="Reset"  name="Reset"  value="Обновить">
+                <input type="Submit" name="submit"  value="Отправить">
+                </p>
+            </form>
+            </td>
+        </tr>
+    </table>
+</body>
