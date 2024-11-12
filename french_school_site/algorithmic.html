@@ -1,4 +1,3 @@
-1005. Дано. Номер места в плацкартном вагоне. Определить, какое это место: верхнее или нижнее, в купе или боковое.
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -35,9 +34,36 @@
         </tr>
         <tr>
             <td colspan="5" bgcolor="white">
-                <a href="">Паспорт</a>
-                <a href="">Алгоритмическая задача</a>
+                <p>1005. Дано. Номер места в плацкартном вагоне. Определить, какое это место: верхнее или нижнее, в купе или боковое.</p>
             </td>
-        </tr>        
+        </tr>    
+        <tr>
+            <td colspan="5" bgcolor="white">
+                <form id="seatForm" onsubmit="return determineSeatType();">
+                    <label for="seatNumber" id="entry">Введите номер места в плацкартном вагоне:</label>
+                    <input type="number" id="seatNumber" name="seatNumber" required><br>
+                    <button type="submit">Определить расположение места</button>
+                </form>
+                <div id="result"></div>
+
+            <script>
+                function determineSeatType() {
+                    const seatNumber = parseInt(document.getElementById('seatNumber').value);
+                    let result = '';
+
+                    if (seatNumber < 1 || seatNumber > 54) {
+                        result = "Вашего места нет в вагоне.";
+                    } else {
+                        const seatType = (seatNumber % 2 === 0) ? "верхнее" : "нижнее";
+                        const location = (seatNumber > 36 & seatNumber < 55) ? " боковое" : " в купе";
+                        result = ('Ваше место: ') + (seatType) + (location) + ('.');
+                    }
+
+                    document.getElementById('result').innerText = result;
+                    return false; // предотвращаем отправку формы
+                }
+            </script>
+            </td>
+        </tr>      
     </table>
 </body>
