@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Алгоритмическая задача</title>
 </head>
 
 <body>
-    <table cellspacing="10" cellpadding="10"  width="100%" background="background.jpg">
+    <table cellspacing="10" cellpadding="10" width="100%" background="background.jpg">
         <tr>
             <td width="100px">
-                <a id="top" href="../french_school_site/index.html" target="_self"><img src="logo.png" height="100px"></a>
+                <a id="top" href="../french_school_site/index.html" target="_self"><img src="logo.png"
+                        height="100px"></a>
             </td>
             <td align="right" width="50%">
 
             </td>
-            <td align="right" bgcolor="white" >
+            <td align="right" bgcolor="white">
                 <table>
                     <td width="150px" align="center">
                         <a href="../french_school_site/index.html" target="_self">Главная</a>
@@ -30,13 +32,14 @@
                     </td>
                 </table>
             </td>
-            
+
         </tr>
         <tr>
             <td colspan="5" bgcolor="white">
-                <p>1005. Дано. Номер места в плацкартном вагоне. Определить, какое это место: верхнее или нижнее, в купе или боковое.</p>
+                <p>1005. Дано. Номер места в плацкартном вагоне. Определить, какое это место: верхнее или нижнее, в купе
+                    или боковое.</p>
             </td>
-        </tr>    
+        </tr>
         <tr>
             <td colspan="5" bgcolor="white">
                 <form id="seatForm" onsubmit="return determineSeatType();">
@@ -46,24 +49,24 @@
                 </form>
                 <div id="result"></div>
 
-            <script>
-                function determineSeatType() {
-                    const seatNumber = parseInt(document.getElementById('seatNumber').value);
-                    let result = '';
+                <script>
+                    function determineSeatType() {
+                        const seatNumber = parseInt(document.getElementById('seatNumber').value);
+                        let result = '';
 
-                    if (seatNumber < 1 || seatNumber > 54) {
-                        result = "Вашего места нет в вагоне.";
-                    } else {
-                        const seatType = (seatNumber % 2 === 0) ? "верхнее" : "нижнее";
-                        const location = (seatNumber > 36 & seatNumber < 55) ? " боковое" : " в купе";
-                        result = ('Ваше место: ') + (seatType) + (location) + ('.');
+                        if (seatNumber < 1 || seatNumber > 54) {
+                            result = "Вашего места нет в вагоне.";
+                        } else {
+                            const seatType = (seatNumber % 2 === 0) ? "верхнее" : "нижнее";
+                            const location = (seatNumber > 36 & seatNumber < 55) ? " боковое" : " в купе";
+                            result = ('Ваше место: ') + (seatType) + (location) + ('.');
+                        }
+
+                        document.getElementById('result').innerText = result;
+                        return false; // предотвращаем отправку формы
                     }
-
-                    document.getElementById('result').innerText = result;
-                    return false; // предотвращаем отправку формы
-                }
-            </script>
+                </script>
             </td>
-        </tr>      
+        </tr>
     </table>
 </body>
