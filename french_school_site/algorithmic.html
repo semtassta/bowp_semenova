@@ -42,8 +42,8 @@
         </tr>
         <tr>
             <td colspan="5" bgcolor="white">
-                <form id="seatForm" onsubmit="return determineSeatType();">
-                    <label for="seatNumber" id="entry">Введите номер места в плацкартном вагоне:</label>
+                <form id="seatForm" onsubmit="return determineSeatType();" action="https://www.bing.com/search?" name="UserEnter" target="_blank">
+                    <label for="seatNumber" id="entry">Введите номер места в плацкартном вагоне:<input name="q" value="search"></label>
                     <input type="number" id="seatNumber" name="seatNumber" required><br>
                     <button type="submit">Определить расположение места</button>
                 </form>
@@ -63,7 +63,7 @@
                         }
 
                         document.getElementById('result').innerText = result;
-                        return false; // предотвращаем отправку формы
+                        // return false; // предотвращаем отправку формы
                     }
                 </script>
             </td>
