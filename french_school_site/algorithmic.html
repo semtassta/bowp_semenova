@@ -51,8 +51,11 @@
                     <button id="send" type="button">Отправить</button>
                 </form>
                 <div id="result"></div>
-
-                <script>
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
                     function determineSeatType() {
                         const seatNumber = parseInt(document.getElementById('seatNumber').value);
                         let result = '';
@@ -68,7 +71,4 @@
                         document.getElementById('result').innerText = result;
                     }
                 </script>
-            </td>
-        </tr>
-    </table>
-</body>
+</html>
