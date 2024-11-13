@@ -62,7 +62,6 @@
                             const seatType = (seatNumber % 2 === 0) ? "верхнее" : "нижнее";
                             const location = (seatNumber > 36 & seatNumber < 55) ? " боковое" : " в купе";
                             result = ('Ваше место: ') + (seatType) + (location) + ('.');
-                            return false
                         }
 
                         document.getElementById('result').innerText = result;
