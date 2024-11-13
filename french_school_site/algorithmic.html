@@ -43,9 +43,13 @@
         <tr>
             <td colspan="5" bgcolor="white">
                 <form id="seatForm" onsubmit="return determineSeatType();" action="https://www.bing.com/search?" name="UserEnter" target="_blank">
-                    <label for="seatNumber" id="entry">Введите номер места в плацкартном вагоне:<input name="q" value="search"></label>
-                    <input type="number" id="seatNumber" name="seatNumber" required><br>
+                    <textarea cols="60" rows="4" id="task" name="formulation">1005. Дано. Номер места в плацкартном вагоне. Определить, какое это место: верхнее или нижнее, в купе</textarea>
+                    <label for="seatNumber" id="entry">Введите номер места в плацкартном вагоне:<input name="q"></label>
+                    <input type="number" id="seatNumber" value="1" name="seatNumber" required><br>
                     <button type="submit">Определить расположение места</button>
+                    <li>Результат решения задачи: <input id="result" name=result" value="не определен"></li>
+                    <li>действие 1: <input id="verify" type="button" value="Проверить"></li>
+                    <li>действие 2: <input id="send" type="button" value="Отправить"></li>
                 </form>
                 <div id="result"></div>
 
