@@ -17,7 +17,7 @@ async function getResponse() {
         node_for_insert.innerHTML += `
         <blockquote class="blockquote" id=${content[key].id}>
                 <p class="mb-4">${content[key].text}</p>
-                <footer class="blockquote-footer">${content[key].author}
+                <footer class="blockquote-footer">${content[key].title}
                     <cite title="Source Title">
                         ${content[key].position}, ${content[key].company}
                     </cite>

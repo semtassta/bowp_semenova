@@ -1,36 +1,31 @@
 [
     {
-        "id": "review1",
+        "id": "service1",
         "title": "Knowledge base articles",
         "description": "I’ll make sure your articles are accurate, consistent, and well organised. Zendesk, Freshdesk, Intercom, and more."
     },
-    
     {
-        "id": "review2",
+        "id": "service2",
         "title": "User guides",
         "description": "I’ll make your product manuals more user-friendly, with task-based documentation that helps people achieve their goals."
     },
-    
     {
-        "id": "review3",
+        "id": "service3",
         "title": "Paligo content",
         "description": "Looking for a technical writer with Paligo experience? I’ve used Paligo for many years and have worked for Paligo."
     },
-    
     {
-        "id": "review4",
+        "id": "service4",
         "title": "MadCap Flare content",
         "description": "Need someone who knows their way around MadCap Flare? I could be the man for your project. I used it extensively for many years."
     },
-    
     {
-        "id": "review5",
+        "id": "service5",
         "title": "Conversions",
         "description": "Conversions from one format to another are rarely clean and hassle-free. I can help you tidy up your content so it’s ready to use."
     },
-    
     {
-        "id": "review6",
+        "id": "service6",
         "title": "Other projects",
         "description": "Other technical writing projects, content design, UX writing, copywriting."
     }
