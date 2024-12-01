@@ -16,10 +16,10 @@ async function getResponse() {
     for (key in content) {
         node_for_insert.innerHTML += `
         <li style="width: 300px" class="d-flex flex-column m-3 p-2 border bg-body" id=${content[key].id}>
-        <img style="width: 200px" class="align-self-center" src=${content[key].img}>
-        <h5 class="card-title">${content[key].title}</h5>
-        <p class="card-text">${content[key].description}</p>
-        <p class="card-text">Tools used: ${content[key].tools}</p>
+        <img style="width: 200px; height: 200px" class="align-self-center" src=${content[key].img}>
+        <h5 class="card-title py-3">${content[key].title}</h5>
+        <p class="card-text py-0">${content[key].description}</p>
+        <p class="card-text">Tools: ${content[key].tools}</p>
         <p class="card-text">Industries: ${content[key].industries}</p>
         </li>
                 `
