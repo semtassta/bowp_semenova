@@ -25,5 +25,4 @@ async function getResponse() {
                 `
     }
 }
-<<<<<<< HEAD
 getResponse()
