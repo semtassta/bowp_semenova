@@ -1,11 +1,11 @@
 async function getResponse() {
-    let response = await fetch("https://semtassta.github.io/bowp_semenova/technical_writer_portfolio/data/reviews.json")
+    let response = await fetch("https://semtassta.github.io/bowp_semenova/technical_writer_portfolio/data/portfolio.json")
     console.log("response:\n", response, "\n /response: \n")
     let content = await response.text()
     console.log("await response.text()\n", content)
     content = JSON.parse(content)
-    content = content.slice(0, 3)
-    console.log("content.slice(0, 3)", content)
+    content = content.slice(0, 9)
+    console.log("content.slice(0, 9)", content)
     let key
     for (key in content) {
         console.log(content[key].id, content[key].title)
@@ -15,14 +15,13 @@ async function getResponse() {
     let node_for_insert = document.getElementById("node_for_insert")
     for (key in content) {
         node_for_insert.innerHTML += `
-        <blockquote class="blockquote" id=${content[key].id}>
-                <p class="mb-4">${content[key].text}</p>
-                <footer class="blockquote-footer">${content[key].author}
-                    <cite title="Source Title">
-                        ${content[key].title}, ${content[key].title}
-                    </cite>
-                </footer>
-        </blockquote>
+        <li style="width: 300px" class="d-flex flex-column m-3 p-2 border bg-body" id=${content[key].id}>
+        <img style="width: 200px" class="align-self-center" src=${content[key].img}>
+        <h5 class="card-title">${content[key].title}</h5>
+        <p class="card-text">${content[key].description}</p>
+        <p class="card-text">Tools used: ${content[key].tools}</p>
+        <p class="card-text">Industries: ${content[key].industries}</p>
+        </li>
                 `
     }
 }
