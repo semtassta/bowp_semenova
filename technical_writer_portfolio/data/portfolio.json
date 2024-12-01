@@ -1,59 +1,74 @@
 [
     {
-      "id": "1",
-      "title": "4Energy Flare HTML5 sample",
-      "tools": "Madcap Flare",
-      "description": "This is a sample I created using content from a much larger documentation suite. The original content was created in Atlassian Confluence, but I have repurposed it as Flare HTML5 online help.",
-      "industries": "Data center cooling, Software, Hardware",
-      "img": "../images/portfolio/4energy-madcap-flare.webp"
+        "id": "1",
+        "title": "4Energy Flare HTML5 sample",
+        "tools": "Madcap Flare",
+        "description": "This is a sample I created using content from a much larger documentation suite. The original content was created in Atlassian Confluence, but I have repurposed it as Flare HTML5 online help.",
+        "industries": "Data center cooling, Software, Hardware",
+        "img": "../images/portfolio/4energy-madcap-flare.webp"
     },
     {
-      "id": "2",
-      "title": "Photoroom knowledge base",
-      "tools": "Intercom",
-      "description": "I have created many articles for the Photoroom knowledge base to help people use their AI photo-editing app.",
-      "industries": "Photography, Software",
-      "img": "../images/portfolio/photoroom-top-of-article.webp"
+        "id": "2",
+        "title": "Photoroom knowledge base",
+        "tools": "Intercom",
+        "description": "I have created many articles for the Photoroom knowledge base to help people use their AI photo-editing app.",
+        "industries": "Photography, Software",
+        "img": "../images/portfolio/photoroom-top-of-article.webp"
     },
     {
-      "id": "3",
-      "title": "10-Minute Tech Comm Podcast Episode",
-      "tools": "Talking Head",
-      "description": "It’s no surprise that I think professional portfolios are important. If your profession or skill lends itself to this modality, it’s a method to not only display samples of work (whether you’re actively looking for jobs or not), but also an opportunity to perform the skills that your resume says you have. For me, every choice—even of omission—is a thoughtful, rhetorical one. Listen and let me know what you think!",
-      "industries": "Podcasts",
-      "img": "../images/portfolio/10_minute_podcast.png"
+        "id": "3",
+        "title": "10-Minute Tech Comm Podcast Episode",
+        "tools": "Talking Head",
+        "description": "It’s no surprise that I think professional portfolios are important. Listen and let me know what you think!",
+        "industries": "Podcasts",
+        "img": "../images/portfolio/10_minute_podcast.png"
     },
     {
-     "id": "4",
-      "title": "Platform Trailer Manual",
-      "tools": "UI Design",
-      "description": "While serving as Sr. Technical Writer at ProWrite Inc., East Manufacturing contracted us to update their trailer manual. To complete the project, we met with their Subject Matter Experts (SMEs), reformatted the manual to aid comprehension and edited the manual for language, grammar, and consistency.",
-      "industries": "Machinery",
-      "img": "../images/portfolio/platform_trailer_manual.png"
+        "id": "4",
+        "title": "Platform Trailer Manual",
+        "tools": "UI Design",
+        "description": "While serving as Sr. Technical Writer at ProWrite Inc., East Manufacturing contracted us to update their trailer manual.",
+        "industries": "Machinery",
+        "img": "../images/portfolio/platform_trailer_manual.png"
+    },
+    {
+        "id": "5",
+        "title": "J&J MedTech Instructions For Use (IFU)",
+        "tools": "Adobe InDesign",
+        "description": "I was tasked with creating an Instructions For Use (IFU) for a new medical device.",
+        "industries": "Medicine",
+        "img": "../images/portfolio/jj_medtech_instructions.png"
+    },
+    {
+        "id": "6",
+        "title": "Timecode Flare HTML5 sample",
+        "tools": "MadCap Flare",
+        "description": "This is a sample of a user guide for a time synchronisation device (made by Timecode Systems).",
+        "industries": "Film and TV, Software, Hardware",
+        "img": "../images/portfolio/timecode-html5-flare.webp"
+    },
+    {
+        "id": "7",
+        "title": "Paligo HTML5 help center",
+        "tools": "Paligo",
+        "description": "I have worked on many projects for Paligo and have created lots of pages for their HTML5 help center.",
+        "industries": "Software - Component Content Management System, Technical communication",
+        "img": "../images/portfolio/paligo.webp"
+    },
+    {
+        "id": "8",
+        "title": "Free-air controller guide",
+        "tools": "MS Word",
+        "description": "This print manual was created in MS Word. It explains how to install an eController unit. This is a control device for managing fan speeds and alarms.",
+        "industries": "Data center cooling",
+        "img": "../images/portfolio/econtroller-operating-manual.webp"
+    },
+    {
+        "id": "9",
+        "title": "Thermal monitoring software wiki",
+        "tools": "Confluence",
+        "description": "This is documentation for SMARTset software, which is a monitoring and control system used for managing data centre temperatures.",
+        "industries": "Data center cooling, Software, Hardware",
+        "img": "../images/portfolio/confluenceapge.webp"
     }
-    ,
-    {
-      "id": "5",
-      "title": "J&J MedTech Instructions For Use (IFU)",
-      "tools": "Adobe InDesign",
-      "description": "Ethicon Endo-Surgery, Inc. (EES), a Johnson & Johnson company, designs and manufactures medical devices.  As the technical writing intern for EES’ Global Packaging and Labeling Solutions (GPLS) team, I was tasked with creating an Instructions For Use (IFU) for a new medical device, the Enseal G2 Articulating Tissue Sealer. I collaborated with members of the Quality Assurance, Preclinical, R&D, Regulatory, Packaging, and Marketing departments to develop new content for the IFU that was submitted to the FDA.",
-      "industries": "Medicine",
-      "img": "../images/portfolio/jj_medtech_instructions.png"
-    },
-    {
-      "id": "6",
-      "title": "Timecode Flare HTML5 sample",
-      "tools": "MadCap Flare",
-      "description": "This is a sample of a user guide for a time synchronisation device (made by Timecode Systems).",
-      "industries": "Film and TV, Software, Hardware",
-      "img": "../images/portfolio/timecode-html5-flare.webp"
-    },
-    {
-      "id": "7",
-      "title": "Paligo HTML5 help center",
-      "tools": "Paligo",
-      "description": "I have worked on many projects for Paligo and have created lots of pages for their HTML5 help center.",
-      "industries": "Software - Component Content Management System, Technical communication",
-      "img": "../images/portfolio/paligo.webp"
-    }
-  ]
+]

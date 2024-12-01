@@ -8,8 +8,8 @@ async function getResponce() {
     let content = await responce.text()
     console.log("await responce.text()\n", content)
     content = JSON.parse(content)
-    content = content.slice(0, 7)
-    console.log("content.slice(0, 7)", content)
+    content = content.slice(0, 9)
+    console.log("content.slice(0, 9)", content)
     let key
     for (key in content) {
         console.log(content[key].id, content[key].title)
@@ -19,12 +19,12 @@ async function getResponce() {
     let node_for_insert = document.getElementById("node_for_insert")
     for (key in content) {
         node_for_insert.innerHTML += `
-        <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
-        <img style="width: 180px" class="align-self-center" src=${content[key].img}>
+        <li style="width: 300px" class="d-flex flex-column m-3 p-2 border bg-body" id=${content[key].id}>
+        <img style="width: 200px" class="align-self-center" src=${content[key].img}>
         <h5 class="card-title">${content[key].title}</h5>
-        <p class="card-text">${content[key].description}. Цена ${content[key].price} р.</p>
-        <input type="hidden" name= "vendor_code" value=${content[key].vendor_code}>
-        <p class="card-text" >Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+        <p class="card-text">${content[key].description}</p>
+        <p class="card-text">Tools used: ${content[key].tools}</p>
+        <p class="card-text">Industries: ${content[key].industries}</p>
         </li>
                 `
     }
