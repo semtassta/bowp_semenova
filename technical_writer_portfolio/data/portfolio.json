@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "id": "portfolio1",
         "title": "4Energy Flare HTML5 sample",
         "tools": "Madcap Flare",
         "description": "This is a sample I created using content from a much larger documentation suite. The original content was created in Atlassian Confluence, but I have repurposed it as Flare HTML5 online help.",
@@ -9,7 +9,7 @@
 
     },
     {
-        "id": "2",
+        "id": "portfolio2",
         "title": "Photoroom knowledge base",
         "tools": "Intercom",
         "description": "I have created many articles for the Photoroom knowledge base to help people use their AI photo-editing app.",
@@ -17,7 +17,7 @@
         "img": "./images/portfolio/photoroom-top-of-article.webp"
     },
     {
-        "id": "3",
+        "id": "portfolio3",
         "title": "10-Minute Tech Comm Podcast Episode",
         "tools": "Talking Head",
         "description": "It’s no surprise that I think professional portfolios are important. Listen and let me know what you think!",
@@ -25,7 +25,7 @@
         "img": "./images/portfolio/10_minute_podcast.png"
     },
     {
-        "id": "4",
+        "id": "portfolio4",
         "title": "Platform Trailer Manual",
         "tools": "UI Design",
         "description": "While serving as Sr. Technical Writer at ProWrite Inc., East Manufacturing contracted us to update their trailer manual.",
@@ -33,7 +33,7 @@
         "img": "./images/portfolio/platform_trailer_manual.png"
     },
     {
-        "id": "5",
+        "id": "portfolio5",
         "title": "J&J MedTech Instructions For Use (IFU)",
         "tools": "Adobe InDesign",
         "description": "I was tasked with creating an Instructions For Use (IFU) for a new medical device.",
@@ -41,7 +41,7 @@
         "img": "./images/portfolio/jj_medtech_instructions.png"
     },
     {
-        "id": "6",
+        "id": "portfolio6",
         "title": "Timecode Flare HTML5 sample",
         "tools": "MadCap Flare",
         "description": "This is a sample of a user guide for a time synchronisation device (made by Timecode Systems).",
@@ -49,7 +49,7 @@
         "img": "./images/portfolio/timecode-html5-flare.webp"
     },
     {
-        "id": "7",
+        "id": "portfolio7",
         "title": "Paligo HTML5 help center",
         "tools": "Paligo",
         "description": "I have worked on many projects for Paligo and have created lots of pages for their HTML5 help center.",
@@ -57,7 +57,7 @@
         "img": "./images/portfolio/paligo.webp"
     },
     {
-        "id": "8",
+        "id": "portfolio8",
         "title": "Free-air controller guide",
         "tools": "MS Word",
         "description": "This print manual was created in MS Word. It explains how to install an eController unit. This is a control device for managing fan speeds and alarms.",
@@ -65,7 +65,7 @@
         "img": "./images/portfolio/econtroller-operating-manual.webp"
     },
     {
-        "id": "9",
+        "id": "portfolio9",
         "title": "Thermal monitoring software wiki",
         "tools": "Confluence",
         "description": "This is documentation for SMARTset software, which is a monitoring and control system used for managing data centre temperatures.",
