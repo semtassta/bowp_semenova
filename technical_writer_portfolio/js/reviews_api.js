@@ -12,14 +12,14 @@ async function getResponse() {
         console.log(content[key])
     }
 
-    let node_for_insert = document.getElementById("node_for_insert")
+    let node_for_insert = document.getElementById("node_for_insert_reviews")
     for (key in content) {
         node_for_insert.innerHTML += `
         <blockquote class="blockquote" id=${content[key].id}>
                 <p class="mb-4">${content[key].text}</p>
                 <footer class="blockquote-footer">${content[key].author}
                     <cite title="Source Title">
-                        ${content[key].title}, ${content[key].title}
+                        ${content[key].position}, ${content[key].company}
                     </cite>
                 </footer>
         </blockquote>
