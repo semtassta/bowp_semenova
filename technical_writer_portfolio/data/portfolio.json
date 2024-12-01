@@ -5,7 +5,7 @@
         "tools": "Madcap Flare",
         "description": "This is a sample I created using content from a much larger documentation suite. The original content was created in Atlassian Confluence, but I have repurposed it as Flare HTML5 online help.",
         "industries": "Data center cooling, Software, Hardware",
-        "img": "../images/portfolio/4energy-madcap-flare.webp"
+        "img": "./images/portfolio/4energy-madcap-flare.webp"
 
     },
     {
@@ -38,7 +38,7 @@
         "tools": "Adobe InDesign",
         "description": "I was tasked with creating an Instructions For Use (IFU) for a new medical device.",
         "industries": "Medicine",
-        "img": "../images/portfolio/jj_medtech_instructions.png"
+        "img": "./images/portfolio/jj_medtech_instructions.png"
     },
     {
         "id": "6",
