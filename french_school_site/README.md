@@ -8,6 +8,6 @@ https://semtassta.github.io/bowp_semenova/french_school_site/index.html
 
 .venv\Scripts\activate
 
-django-admin startproject semenova_project
+python manage.py runserver
 
 
