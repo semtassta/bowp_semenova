@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Контрольная №1</title>
+</head>
+
+<body>
+    <table cellspacing="10" cellpadding="10" width="100%" background="{% static 'main_site/background.jpg' %}">
+        <tr>
+            <td width="100px">
+                <a id="top" href="{% url 'index' %}" target="_self"><img src="{% static 'main_site/logo.png' %}"
+                        height="100px"></a>
+            </td>
+            <td align="right" width="50%">
+
+            </td>
+            <td align="right" bgcolor="white">
+                <table>
+                    <td width="150px" align="center">
+                        <a href="{% url 'index' %}" target="_self">Главная</a>
+                    </td>
+                    <td width="150px" align="center">
+                        <a href="{% url 'tutors' %}" target="_self">Преподаватели</a>
+                    </td>
+                    <td width="150px" align="center">
+                        <a href="{% url 'exercises' %}" target="_self">Задания</a>
+                    </td>
+                    <td width="150px" align="center">
+                        <a href="{% url 'control_work' %}" target="_self"><b>К/р №1</b></a>
+                    </td>
+                </table>
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="5" bgcolor="white">
+                <p>
+                    Контрольная работа 1
+                </p>
+                <ul>
+                    <li><a href="{% url 'delivery_filter:index' %}">Алгоритмическая задача</a></li>
+                    <li><a href="{% url 'delivery_filter:about' %}">Я и моя образовательная программа</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

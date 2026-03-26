@@ -1,3 +1,5 @@
+{% load static %}
+
 <!-- Навигацию (раздел 1, раздел 2, к началу ) внутри страницы с использование закладок;
 Фрагменты, содержащие списки нумерованные, не нумерованные, вложенные
 Изображения объектов или субъектов с соответствующими пояснениями и комментариями;
@@ -19,10 +21,10 @@
 </head>
 
 <body>
-    <table cellspacing="10" cellpadding="10" width="100%" background="background.jpg">
+    <table cellspacing="10" cellpadding="10" width="100%" background="{% static 'main_site/background.jpg' %}">
         <tr>
             <td width="100px">
-                <a id="top" href="../french_school_site/index.html" target="_self"><img src="logo.png"
+                <a id="top" href="{% url 'index' %}" target="_self"><img src="{% static 'main_site/logo.png' %}"
                         height="100px"></a>
             </td>
             <td align="right" width="50%">
@@ -31,16 +33,16 @@
             <td align="right" bgcolor="white">
                 <table>
                     <td width="150px" align="center">
-                        <a href="../french_school_site/index.html" target="_self">Главная</a>
+                        <a href="{% url 'index' %}" target="_self">Главная</a>
                     </td>
                     <td width="150px" align="center">
-                        <a href="../french_school_site/tutors.html" target="_self"><b>Преподаватели</b></a>
+                        <a href="{% url 'tutors' %}" target="_self"><b>Преподаватели</b></a>
                     </td>
                     <td width="150px" align="center">
-                        <a href="../french_school_site/exercises.html" target="_self">Задания</a>
+                        <a href="{% url 'exercises' %}" target="_self">Задания</a>
                     </td>
                     <td width="150px" align="center">
-                        <a href="../french_school_site/control_work.html" target="_self">К/р №1</a>
+                        <a href="/control_work.html" target="_self">К/р №1</a>
                     </td>
                 </table>
             </td>
@@ -63,7 +65,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img class="tutor_portrait" src="tutors/veronique_duranseau.jpg">
+                            <img class="tutor_portrait" src="{% static 'main_site/veronique_duranseau.jpg' %}">
                         </td>
                         <td bgcolor="white">
                             <h4>
@@ -82,7 +84,7 @@
 
                     <tr>
                         <td>
-                            <img class="tutor_portrait" src="tutors/iulia_makoeva.jpg">
+                            <img class="tutor_portrait" src="{% static 'main_site/iulia_makoeva.jpg' %}">
                         </td>
                         <td bgcolor="white">
                             <h4>
@@ -99,8 +101,8 @@
                         </td>
                         <td align="center">
                             Диплом<br>
-                            <a href="tutors/diploma.html" target="_blank"><img width="100px"
-                                    src="tutors/diploma.jpg"></a>
+                            <a href="diploma.html" target="_blank"><img width="100px"
+                                    src="{% static 'main_site/diploma.jpg' %}"></a>
                         </td>
                     </tr>
                     <tr>
@@ -110,7 +112,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img class="tutor_portrait" src="tutors/eugene_savard.jpg">
+                            <img class="tutor_portrait" src="{% static 'main_site/eugene_savard.jpg' %}">
                         </td>
                         <td bgcolor="white">
                             <h4>
@@ -129,7 +131,7 @@
 
                     <tr>
                         <td>
-                            <a id="founder"><img class="tutor_portrait" src="tutors/aliona_boisvert.jpg"></a>
+                            <a id="founder"><img class="tutor_portrait" src="{% static 'main_site/aliona_boisvert.jpg' %}"></a>
                         </td>
                         <td bgcolor="white">
                             <h4>
@@ -148,7 +150,7 @@
 
                     <tr>
                         <td>
-                            <img class="tutor_portrait" src="tutors/asad_akram_suleiman.jpg">
+                            <img class="tutor_portrait" src="{% static 'main_site/asad_akram_suleiman.jpg' %}">
                         </td>
                         <td bgcolor="white">
                             <h4>
@@ -162,7 +164,7 @@
                         </td>
                         <td align="center">
                             Сертификат Delf <br>
-                            <a href="tutors/delf.html" target="_blank"><img width="100px" src="tutors/delf.png"></a>
+                            <a href="delf.html" target="_blank"><img width="100px" src="{% static 'main_site/delf.png' %}"></a>
                         </td>
                     </tr>
                 </table>

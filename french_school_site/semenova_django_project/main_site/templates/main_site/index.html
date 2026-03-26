@@ -1,3 +1,5 @@
+{% load static %}
+
 <!-- Текстовые и графические гиперссылки, открывающиеся в текущем окне;
 В том числе на закладку (ссылку на внутренний фрагмент) одной из страниц;
 На один или несколько внешних сайтов или страниц внешних сайтов, открывающихся в новом окне браузера;
@@ -25,10 +27,10 @@
 </head>
 
 <body>
-    <table cellspacing="10" cellpadding="10" width="100%" background="background.jpg">
+    <table cellspacing="10" cellpadding="10" width="100%" background="{% static 'main_site/background.jpg' %}">
         <tr>
             <td width="100px">
-                <a id="top" href="../french_school_site/index.html" target="_self"><img src="logo.png"
+                <a id="top" href="{% url 'index' %}" target="_self"><img src="{% static 'main_site/logo.png' %}"
                         height="100px"></a>
             </td>
             <td align="right" width="50%">
@@ -37,16 +39,16 @@
             <td align="right" bgcolor="white">
                 <table>
                     <td width="150px" align="center">
-                        <a href="../french_school_site/index.html" target="_self"><b>Главная</b></a>
+                        <a href="{% url 'index' %}" target="_self"><b>Главная</b></a>
                     </td>
                     <td width="150px" align="center">
-                        <a href="../french_school_site/tutors.html" target="_self">Преподаватели</a>
+                        <a href="{% url 'tutors' %}" target="_self">Преподаватели</a>
                     </td>
                     <td width="150px" align="center">
-                        <a href="../french_school_site/exercises.html" target="_self">Задания</a>
+                        <a href="{% url 'exercises' %}" target="_self">Задания</a>
                     </td>
                     <td width="150px" align="center">
-                        <a href="../french_school_site/control_work.html" target="_self">К/р №1</a>
+                        <a href="{% url 'control_work' %}" target="_self">К/р №1</a>
                     </td>
                 </table>
             </td>
@@ -56,7 +58,7 @@
             <td colspan="5" bgcolor="white">
                 Здравствуйте! Вы на сайте онлайн-школы французского языка <b>École Sur Web</b>. <br>
                 Мы предлагаем обучение по индивидуальной программе для эффективного и быстрого достижения цели.
-                Наши <a href=../french_school_site/tutors.html>преподаватели</a> – носители языка и специалисты с
+                Наши <a href=tutors.html>преподаватели</a> – носители языка и специалисты с
                 многолетним стажем.
                 В работе мы используем авторские материалы, языковой коучинг, придерживаемся индивидуального подхода и
                 принципов микрообучения.
@@ -68,8 +70,8 @@
         </tr>
         <tr>
             <td>
-                <a href="../french_school_site/tutors.html#founder"><img class="tutor_portrait"
-                        src="tutors/aliona_boisvert.jpg"></a>
+                <a href="tutors.html#founder"><img class="tutor_portrait"
+                        src="{% static 'main_site/aliona_boisvert.jpg' %}"></a>
             </td>
             <td bgcolor="white">
                 <h4>

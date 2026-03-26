@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Фильтр транспортных компаний</title>
+</head>
+<body>
+<h2>Фильтрация транспортных компаний</h2>
+
+<form action="{% url 'delivery_filter:filter_companies' %}" method="get">
+    <label>Компании:</label><br>
+    <input type="text" name="companies" placeholder="Газелька2 Доставочка Перевозки007"><br><br>
+
+    <label>Дни доставки:</label><br>
+    <input type="text" name="days" placeholder="10 9 7"><br><br>
+
+    <label>Максимум дней:</label><br>
+    <input type="number" name="max" placeholder="9"><br><br>
+
+    <button type="submit">Отфильтровать</button>
+</form>
+
+<p>
+    <a href="//github.com/evshadrina/WebApplications_2026/blob/main/task13.jpg">Ссылка на задание и примеры</a></p>
+<p><b>Примеры для копирования</b></p>
+    
+<ol>
+    <li>
+        <ul>
+        <li>Газелька1 Доставочка1 Перевозки007 ЛюбимыйГрузовичок</li>
+        <li>10 9 9 9</li>
+        <li>9</li>
+    </ul>
+    </li>
+    <li>
+        <ul>
+        <li>Газелька Грузовичок Перевозки007</li>
+        <li>6 7 4</li>
+        <li>5</li>
+    </ul>
+    </li>
+    <li>
+        <ul>
+        <li>Газелька2 Доставочка1 Перевозки007 ЛюбимыйГрузовичок</li>
+        <li>9 9 9 9</li>
+        <li>8</li>
+    </ul>
+    </li>
+</ol>
+</body>
+</html>

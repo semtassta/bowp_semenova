@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Я и моя образовательная программа</title>
+</head>
+<body>
+
+<h1>Я и моя образовательная программа</h1>
+
+<h2>Обо мне</h2>
+<p><strong>ФИО:</strong> {{ me.name }}</p>
+<p><img src="{{ me.photo }}" width="150"></p>
+<p><strong>Email:</strong> {{ me.email }}</p>
+<p><strong>Телефон:</strong> {{ me.phone }}</p>
+
+<hr>
+
+<h2>Образовательная программа</h2>
+<p><strong>Название:</strong> {{ program.title }}</p>
+<p><strong>Описание:</strong> {{ program.description }}</p>
+
+<h3>Руководитель программы</h3>
+<p>{{ program.director.name }}</p>
+<img src="{{ program.director.photo }}" width="150">
+<p>Email: {{ program.director.email }}</p>
+
+<h3>Менеджер программы</h3>
+<p>{{ program.manager.name }}</p>
+<img src="{{ program.manager.photo }}" width="150">
+<p>Email: {{ program.manager.email }}</p>
+
+<hr>
+
+<h2>Мои сокурсники</h2>
+{% for st in students %}
+    <div style="margin-bottom:20px;">
+        <p><strong>{{ st.name }}</strong></p>
+        <img src="{{ st.photo }}" width="120">
+        <p>Email: {{ st.email }}</p>
+        <p>Телефон: {{ st.phone }}</p>
+    </div>
+{% endfor %}
+
+</body>
+</html>

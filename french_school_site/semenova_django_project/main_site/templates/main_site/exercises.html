@@ -1,3 +1,5 @@
+{% load static %}
+
 <!-- Фрагмент с работающей формой для отправки на удаленный сервер оригинальных данных 
  заказы из магазина, отзывы на что-либо, или другое, относящееся к тематике сайта. 
  Названия переменных (атрибут - name) должны соответствовать решаемой задаче. 
@@ -18,11 +20,11 @@
     </style>
 </head>
 
-<body background="background.jpg">
+<body background="{% static 'main_site/background.jpg' %}">
     <table cellspacing="10" cellpadding="10"  width="100%">
         <tr>
             <td width="100px">
-                <a id="top" href="../french_school_site/index.html" target="_self"><img src="logo.png" height="100px"></a>
+                <a id="top" href="{% url 'index' %}" target="_self"><img src="{% static 'main_site/logo.png' %}" height="100px"></a>
             </td>
             <td align="right" width="50%">
 
@@ -30,16 +32,16 @@
             <td align="right" bgcolor="white" >
                 <table>
                     <td width="150px" align="center">
-                        <a href="../french_school_site/index.html" target="_self">Главная</a>
+                        <a href="{% url 'index' %}" target="_self">Главная</a>
                     </td>
                     <td width="150px" align="center">
-                        <a href="../french_school_site/tutors.html" target="_self">Преподаватели</a>
+                        <a href="{% url 'tutors' %}" target="_self">Преподаватели</a>
                     </td>
                     <td width="150px" align="center">
-                        <a href="../french_school_site/exercises.html" target="_self"><b>Задания</b></a>
+                        <a href="{% url 'exercises' %}" target="_self"><b>Задания</b></a>
                     </td>
                     <td width="150px" align="center">
-                        <a href="../french_school_site/control_work.html" target="_self">К/р №1</a>
+                        <a href="{% url 'control_work' %}" target="_self">К/р №1</a>
                     </td>
                 </table>
             </td>
@@ -66,7 +68,7 @@
                 <p align="center">Установите соответствие между высказываниями каждого говорящего и утверждениями в списке. 
                     В задании есть одно лишнее утверждение.
                 </p>
-                <audio src="practice_audio_1.mp3" controls></audio>
+                <audio src="{% static 'main_site/practice_audio_1.mp3' %}" controls></audio>
                 <ol>
                     <li>L'utilisation d'internet est un moyen efficace d'apprendre l'anglais.</li>
                     <li>Il existe de nombreux forums intéressants sur internet.</li>
@@ -100,7 +102,7 @@
 
                 <h3 align="center"><a id="exercise4">Задание 4</a> </h3>
                 <p align="center">Выберите верные утверждения.</p>
-                <audio src="practice_audio_2.mp3" controls></audio>
+                <audio src="{% static 'main_site/practice_audio_2.mp3' %}" controls></audio>
                 <p>Ответ:
                     <input type="Checkbox" name="answer_4"  value="1" checked>Joëlle est fatiguée. <br>
                     <input type="Checkbox" name="answer_4"  value="2">Joëlle fait son cours dans 3 classes de première.<br>
